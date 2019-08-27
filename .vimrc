@@ -95,8 +95,9 @@ nnoremap <C-H> <C-W><C-H>
 
 " Airline config
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#ale#enabled     = 1
-let g:airline_theme                      = 'raven'
+let g:airline#extensions#ale#enabled = 1
+let g:airline_theme = 'base16_google'
+let g:tmuxline_preset = 'full'
 
 " Nerdtree config
 nnoremap <Leader>o :NERDTreeToggle<CR>
