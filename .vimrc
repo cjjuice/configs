@@ -35,6 +35,7 @@ call plug#end()
 
 " GENERAL CONFIG
 " ===================
+set hidden
 set autoread
 set number
 set directory=~/.vim/tmp/
