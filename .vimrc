@@ -35,6 +35,7 @@ call plug#end()
 
 " GENERAL CONFIG
 " ===================
+set autoread
 set number
 set directory=~/.vim/tmp/
 set guifont=Anonymous\ Pro:h12
