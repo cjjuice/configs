@@ -16,6 +16,7 @@ Plug 'tpope/vim-rails'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'flazz/vim-colorschemes'
+Plug 'chriskempson/base16-vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'editorconfig/editorconfig-vim'
@@ -40,8 +41,18 @@ set guifont=Anonymous\ Pro:h12
 nnoremap ; :Files<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>h :History<CR>
-colorscheme made_of_code
 
+" use true colors
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+" colorscheme
+colorscheme madeofcode
+
+" highlight active line number
 set cursorline
 hi clear CursorLine
 augroup CLClear
