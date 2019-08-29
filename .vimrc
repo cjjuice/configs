@@ -41,7 +41,7 @@ set number
 set directory=~/.vim/tmp/
 set guifont=Anonymous\ Pro:h12
 nnoremap ; :Files<CR>
-nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>B :Buffers<CR>
 nnoremap <Leader>h :History<CR>
 
 " use true colors
